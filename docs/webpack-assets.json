@@ -1,0 +1,14 @@
+{
+  "polyfills": {
+    "js": "polyfills.dfd12e967fb3d5cf16a6.bundle.js"
+  },
+  "vendor": {
+    "js": "vendor.ddfa59a392efcaa6191e.bundle.js"
+  },
+  "main": {
+    "js": "main.ea768ef0b8d5c0e3ddb9.bundle.js"
+  },
+  "manifest": {
+    "js": "manifest.fce42c9fe1f976f98bff.bundle.js"
+  }
+}

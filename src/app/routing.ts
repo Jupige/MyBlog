@@ -1,10 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AuthService } from './shared';
-import { HomeComponent } from "app/home/home.component";
-import { ArchivesComponent } from "app/archives/archives.component";
-import { TagsComponent } from "app/tags/tags.component";
-import { AboutComponent } from "app/about/about.component";
-import { NotfoundComponent } from "app/notfound/notfound.component";
+// import { HomeComponent } from "app/home/home.component";
+// import { ArchivesComponent } from "app/archives/archives.component";
+// import { TagsComponent } from "app/tags/tags.component";
+// import { AboutComponent } from "app/about/about.component";
+// import { NotfoundComponent } from "app/notfound/notfound.component";
 
 export const routes: Routes = [
     { path: 'home', loadChildren: './home/home.module#HomeModule' },
