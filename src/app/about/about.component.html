@@ -1,3 +1,26 @@
-<p>
+<p class="p-bg">
   about works!
 </p>
+<dx-data-grid [dataSource]="orders" keyExpr="orderId">
+
+  <dxi-column *ngFor="let col of orderColumns" [dataField]="col" cellTemplate="cellTemplate">
+  </dxi-column>
+
+  <dxo-column-chooser enabled="true" emptyPanelText="select cloumns"></dxo-column-chooser>
+  <dxo-column-chooser enabled="true" emptyPanelText="select cloumns"></dxo-column-chooser>
+  <dxo-editing [allowUpdating]="true" mode="cell"></dxo-editing>
+  <dxo-paging [enabled]="false"></dxo-paging>
+
+  <div *dxTemplate="let cell of 'cellTemplate'">
+    <span>{{cell.data | json}}</span>
+  </div>
+
+  <div *dxTemplate="let cell of 'cellTemplate222'">
+
+  </div>
+
+</dx-data-grid>
+
+<p-dialog [visible]="true">
+  hello world!
+</p-dialog>

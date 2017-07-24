@@ -6,12 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { Routings } from './routing';
 import { AuthService } from './shared';
-
-// import { HomeModule } from "app/home/home.module";
-// import { AboutModule } from "app/about/about.module";
-// import { ArchivesModule } from "app/archives/archives.module";
-// import { NotFoundModule } from "app/notfound/notfound.module";
-// import { TagsModule } from "app/tags/tags.module";
+import { GlobalState } from "./core/index";
+import { AboutModule } from "./about/about.module";
 
 
 @NgModule({
@@ -24,14 +20,9 @@ import { AuthService } from './shared';
     FormsModule,
     HttpModule,
     Routings,
-
-    // HomeModule,
-    // AboutModule,
-    // ArchivesModule,
-    // NotFoundModule,
-    // TagsModule,
+    AboutModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, GlobalState],
   bootstrap: [AppComponent]
 })
 export class AppModule {

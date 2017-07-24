@@ -1,3 +1,7 @@
+import {BrowserAnimationsModule} from '_@angular_platform-browser@4.0.3@@angular/platform-browser/animations';
+import {DxDataGridModule} from 'devextreme-angular';
+import { DialogModule } from 'primeng/primeng';
+import { SharedModule } from 'primeng/primeng';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +12,11 @@ import { AuthService } from '../shared';
 @NgModule({
   imports: [
     CommonModule,
-    Routings
+    Routings,
+    DxDataGridModule,
+    DialogModule,
+    SharedModule,
+    BrowserAnimationsModule
   ],
   declarations: [AboutComponent],
   providers: [{
